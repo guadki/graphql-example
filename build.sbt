@@ -7,5 +7,5 @@ ThisBuild / scalaVersion := "2.13.9"
 lazy val root = (project in file("."))
   .settings(
     name := "graphql-example",
-    libraryDependencies ++= Seq(sangria)
+    libraryDependencies ++= Seq(sangria, akkaHttp, akkaActor, sangriaAkkaHttpCore, sangriaAkkaHttpCirce)
   )
